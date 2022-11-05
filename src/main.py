@@ -1,4 +1,7 @@
 import os
+os.environ['KIVY_GL_BACKEND'] = 'angle_sdl2'
+from kivy import Config
+Config.set('graphics', 'multisamples', '0')
 from kivymd.app import MDApp
 from kivymd.uix.floatlayout import MDFloatLayout
 from kivymd.uix.screen import MDScreen

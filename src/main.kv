@@ -32,14 +32,26 @@
 	MDFloatLayout:
 		radius:[80,]
 		md_bg_color:rgba("#FF7EFEA")
-		MDFloatLayout:
-			radius:[80,]
-			md_bg_color:rgba("#FF7EFEA")
-			MDCard:
-				md_bg_color:rgba(1,1,1,.4)
-				MDTextFieldRound:
-					#icon_left: "email"
-					radius:[1,]
-					hint_text: "Field with left icon"
-Onboarding:
+		MDLabel:
+			text:'Log in'
+			font_style:"H2"
+			pos_hint:{'center_y':.8}
+			halign:"left"
+			spacing:"10dp"
+		MDTextField:
+			#mode:'round'
+			hint_text:"Email"
+			pos_hint:{'center_y':.6}
+			halign:"center"
+			validator:"email"
+			color:rgba("#FFD9B8")
+		MDTextField:
+			#mode:'round'
+			hint_text:"Password"
+			password:True
+			pos_hint:{'center_y':.5}
+			halign:"center"
+		MDRoundFlatButton:
+		    text:"Login"
+Sign:
 	
