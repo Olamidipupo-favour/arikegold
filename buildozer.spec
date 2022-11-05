@@ -36,7 +36,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.1.0,kivymd==0.104.2,pygments,sdl2_ttf==2.0.15,pillow,plyer,pyjnius,requests,urllib3,android, chardet, certifi, idna,hostpython3,openssl,pyopenssl,httplib2
+requirements = python3,kivy==2.1.0,kivymd==0.104.2,pygments,sdl2_ttf==2.0.15,pillow,plyer,pyjnius,requests,android, chardet, certifi, idna,hostpython3,openssl,pyopenssl,httplib2
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -190,7 +190,7 @@ android.api = 28
 #android.ouya.icon.filename = %(source.dir)s/data/ouya_icon.png
 
 # (str) XML file to include as an intent filters in <activity> tag
-android.manifest.intent_filters = intents_filters.xml
+#android.manifest.intent_filters = intents_filters.xml
 
 # (str) launchMode to set for the main activity
 android.manifest.launch_mode = singleTask
