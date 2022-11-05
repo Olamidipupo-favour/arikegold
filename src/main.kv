@@ -1,2 +1,32 @@
+#:import rgba kivy.utils.get_color_from_hex
 <Onboarding>:
+	MDFloatLayout:
+		radius:[80,]
+		md_bg_color:rgba("#FF7EFEA")
+		MDFloatLayout:
+			radius:[500,500,500,160]
+			size_hint:[.5,.25]
+			pos_hint:{'center_x':.6,'center_y':1}
+			md_bg_color:rgba('#FFD9B8')
+		Image:
+			source:'data/ff.png'
+			size_hint:1,1
+			pos_hint:{'center_x':.5,'center_y':.55}
+		MDLabel:
+			text:"Start your journey with ArikeGold"
+			halign:'center'
+			font_style:'H5'
+			pos_hint:{'center_y':.3}
+		MDLabel:
+			text:"smart,gorgeous & fashionable"
+			halign:'center'
+			font_style:'Subtitle1'
+			pos_hint:{'center_y':.2}
+		MDFillRoundFlatButton:
+			text:"start"
+			md_bg_color:rgba('#FFD9B8')
+			text_color:rgba('#1B1817')
+			pos_hint:{'center_x':.5}
+			radius:[10,5,3,2]
+Onboarding:	
 	
