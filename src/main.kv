@@ -28,12 +28,12 @@
 			pos_hint:{'center_x':.5}
 			size_hint:.2,.05
 			radius:[10,5,3,2]
-<Sign>:
+<Signin>:
 	MDFloatLayout:
 		radius:[80,]
 		md_bg_color:rgba("#FF7EFEA")
 		MDLabel:
-			text:'Log in'
+			text:'Login'
 			font_style:"H2"
 			pos_hint:{'center_y':.8}
 			halign:"left"
@@ -53,5 +53,76 @@
 			halign:"center"
 		MDRoundFlatButton:
 		    text:"Login"
-Sign:
+			pos_hint:{"center_x":.5,"center_y":.35}
+		MDLabel:
+		    text:"Have no account?"
+			pos_hint:{"center_y":.3}
+			halign:"left"
+		MDTextButton:
+		    text:"signup"
+			pos_hint:{"center_y":.3,"center_x":.19}
+			color:"blue"
+		MDLabel:
+		    text:"c ArikeGold 2022"
+			pos_hint:{"center_y":.05}
+			halign:"center"
+<Signup>:
+	MDFloatLayout:
+		radius:[80,]
+		md_bg_color:rgba("#FF7EFEA")
+		MDLabel:
+			text:'Create an account'
+			font_style:"H2"
+			pos_hint:{'center_y':.8}
+			halign:"left"
+			spacing:"10dp"
+		MDTextField:
+			#mode:'round'
+			hint_text:"Email"
+			pos_hint:{'center_y':.6}
+			halign:"center"
+			validator:"email"
+			color:rgba("#FFD9B8")
+		MDTextField:
+			#mode:'round'
+			hint_text:"Password"
+			password:True
+			pos_hint:{'center_y':.5}
+			halign:"center"
+		MDRoundFlatButton:
+		    text:"Signup"
+			pos_hint:{"center_x":.5,"center_y":.35}
+			disabled: True
+		MDCheckbox:
+		    size_hint:.1,.1
+			pos_hint:{"center_y":.4}
+		MDLabel:
+		    text:"by signing up, you agree with our"
+			pos_hint:{"center_y":.4,"center_x":.57}
+		MDTextButton:
+		    text:"terms of service."
+			pos_hint:{"center_y":.4,"center_x":.44}
+			color:"blue"
+		MDLabel:
+		    text:"Possess an account?"
+			pos_hint:{"center_y":.3}
+			halign:"left"
+		MDTextButton:
+		    text:"login"
+			pos_hint:{"center_y":.3,"center_x":.21}
+			color:"blue"
+		MDLabel:
+		    text:"c ArikeGold 2022"
+			pos_hint:{"center_y":.05}
+			halign:"center"
+<Verify>:
+    MDFloatLayout:
+	    md_bg_color:rgba("#FF7EFEA")
+	    Image:
+		    source:"blue-tick.png"
+		    size_hint:.5,.5
+			pos_hint:{"center_x":.5,"center_y":.7}
+		MDLabel:
+		    text:"An email has been sent. Do well to get verified."
+
 	
